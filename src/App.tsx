@@ -10,6 +10,7 @@ function App() {
       <h1>hey</h1>
       <Button text="The Button" primary size="large" />
       <Card
+        primary
         title="Stuff Happened"
         description={desc}
         image="https://images.unsplash.com/photo-1659944975073-453265ccf3a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
