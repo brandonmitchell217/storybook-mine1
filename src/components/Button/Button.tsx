@@ -25,13 +25,15 @@ export const Button = ({
     color: "#fff",
     border: "none",
     borderRadius: "8px",
+    cursor: "pointer",
   };
   const secondaryBtn = {
     backgroundColor: "#3EF0D2",
     padding: "6px 14px",
-    color: "#fff",
+    color: "#000",
     border: "none",
     borderRadius: "8px",
+    cursor: "pointer",
   };
 
   const mode = primary ? primaryBtn : secondaryBtn;

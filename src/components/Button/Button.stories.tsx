@@ -22,25 +22,25 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   size: "large",
-  text: "Button",
+  text: "Primary Button",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   primary: false,
   size: "large",
-  text: "Button",
+  text: "Secondary Button",
 };
 
 export const SmallPrimary = Template.bind({});
 SmallPrimary.args = {
   primary: true,
   size: "small",
-  text: "Button",
+  text: "Small Button",
 };
 export const SmallSecondary = Template.bind({});
 SmallSecondary.args = {
   primary: false,
   size: "small",
-  text: "Button",
+  text: "Small Button",
 };
