@@ -6,7 +6,7 @@ function App() {
   const desc =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at eum obcaecati itaque minima, ad vitae iste, asperiores, quaerat rem sint aliquam repellendus pariatur cum.";
   return (
-    <div className="App">
+    <div className="App" style={{ padding: "0 1rem" }}>
       <h1>hey</h1>
       <Button text="The Button" primary size="large" />
       <Card

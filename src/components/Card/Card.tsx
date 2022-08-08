@@ -2,11 +2,18 @@ import React from "react";
 import { Button } from "../Button/Button";
 
 export interface CardProps {
+  primary?: boolean;
   image: string;
   title: string;
   description: string;
 }
-export const Card = ({ image, title, description, ...props }: CardProps) => {
+export const Card = ({
+  primary,
+  image,
+  title,
+  description,
+  ...props
+}: CardProps) => {
   return (
     <div
       style={{
