@@ -10,6 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 code {
@@ -19,4 +21,17 @@ code {
 
 h1 {
   margin: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
