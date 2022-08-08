@@ -23,9 +23,25 @@ export const Header = ({ logo, direction }: HeaderProps) => {
       })}
     >
       <div>
-        <a href="/">{logo}</a>
+        <a
+          href="/"
+          css={css({
+            fontSize: "22px",
+            textShadow: "0 1px 4px rgba(0,0,0,0.2)",
+          })}
+        >
+          {logo}
+        </a>
       </div>
-      <nav>
+      <nav
+        css={css({
+          minWidth: "300px",
+          width: "35%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        })}
+      >
         <a href="/">Home</a>
         <a href="/">Stuff</a>
         <a href="/">Things</a>
