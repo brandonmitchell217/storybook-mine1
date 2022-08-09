@@ -21,7 +21,7 @@ export const Card = ({
     <div
       css={css({
         width: "350px",
-        margin: "1rem 0",
+        margin: "1rem",
         padding: ".5rem",
         border: "1px solid rgba(0, 0, 0, 0.5)",
         borderRadius: "10px",
@@ -29,14 +29,25 @@ export const Card = ({
       })}
       {...props}
     >
-      <img
-        src={image}
-        alt=""
+      <div
         css={css({
-          display: "block",
-          maxWidth: "100%",
+          position: "relative",
+          width: "100%",
+          height: "200px",
         })}
-      />
+      >
+        <img
+          src={image}
+          alt=""
+          css={css({
+            position: "absolute",
+            height: "100%",
+            width: "100%",
+            left: "0",
+            top: "0",
+          })}
+        />
+      </div>
       <h1>{title}</h1>
       <p
         css={css({
