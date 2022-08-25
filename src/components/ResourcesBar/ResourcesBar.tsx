@@ -2,6 +2,8 @@ import React from "react";
 import "../../../src/index.css";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export interface ResourcesBarProps {
   image: string;
@@ -10,26 +12,30 @@ export interface ResourcesBarProps {
 }
 
 export const ResourcesBar = ({ image, title, info }: ResourcesBarProps) => {
+  const containerStyles = {
+    maxWidth: "1034px",
+    margin: "0 auto",
+    padding: "1rem 0",
+    display: "flex",
+    justifyContent: "space-around",
+    alignItems: "center",
+    border: "1px solid",
+    borderRadius: "20px",
+  };
+
+  const imageStyles = {
+    height: "66px",
+    width: "66px",
+    borderRadius: "50%",
+  };
+
+  const downloadLinkStyles = {
+    fontSize: "2rem",
+  };
+
   return (
-    <div
-      css={css({
-        maxWidth: "1034px",
-        margin: "0 auto",
-        padding: "1rem 0",
-        display: "flex",
-        justifyContent: "space-around",
-        alignItems: "center",
-        border: "1px solid",
-        borderRadius: "20px",
-      })}
-    >
-      <img
-        src={image}
-        alt=""
-        css={css({
-          borderRadius: "50%",
-        })}
-      />
+    <div css={containerStyles}>
+      <img src={image} alt="" css={imageStyles} />
       <div
         css={css({
           flex: "0.8",
@@ -44,7 +50,9 @@ export const ResourcesBar = ({ image, title, info }: ResourcesBarProps) => {
         </h3>
         <p>{info}</p>
       </div>
-      <img src="https://via.placeholder.com/40" alt="" />
+      <a href="/" css={downloadLinkStyles}>
+        <FontAwesomeIcon icon={faDownload} />
+      </a>
     </div>
   );
 };

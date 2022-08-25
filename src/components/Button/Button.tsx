@@ -36,8 +36,18 @@ export const Button = ({
   const mode = primary ? primaryBtn : secondaryBtn;
   const sizeMode = size !== "large" ? "text-sm" : "text-lg";
 
+  const btnClick = () => {
+    console.log("you clicked it");
+  };
+
   return (
-    <button type="button" style={mode} className={`btn-${sizeMode}`} {...props}>
+    <button
+      type="button"
+      onClick={btnClick}
+      style={mode}
+      className={`btn-${sizeMode}`}
+      {...props}
+    >
       {text}
     </button>
   );

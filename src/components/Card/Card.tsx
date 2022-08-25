@@ -45,7 +45,6 @@ export const Card = ({
     margin: "8px 0 16px",
     padding: "0 16px",
     fontSize: "14px",
-    textAlign: "center",
   };
   return (
     <div css={containerStyles} {...props}>
