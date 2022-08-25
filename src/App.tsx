@@ -25,6 +25,7 @@ function App() {
         {data.map((item) => (
           <Card
             primary
+            text="The Button"
             title={item.title}
             description={item.description}
             image={item.image}
