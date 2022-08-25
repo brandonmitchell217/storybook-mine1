@@ -1,6 +1,5 @@
 import React from "react";
-import "../../../src/index.css";
-/** @jsxImportSource @emotion/react */
+// /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";

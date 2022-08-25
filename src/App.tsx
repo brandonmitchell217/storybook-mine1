@@ -1,5 +1,3 @@
-import React from "react";
-/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Button } from "./components/Button/Button";
 import { Card } from "./components/Card/Card";

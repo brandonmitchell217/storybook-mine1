@@ -15,6 +15,7 @@
     "@types/node": "^16.11.47",
     "@types/react": "^18.0.16",
     "@types/react-dom": "^18.0.6",
+    "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -26,7 +27,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "dev": "next dev",
+    "nextBuild": "next build",
+    "nextStart": "next start",
+    "lint": "next lint"
   },
   "eslintConfig": {
     "extends": [

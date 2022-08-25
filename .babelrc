@@ -3,6 +3,7 @@
     "@babel/env",
     "@babel/typescript",
     "@emotion/babel-preset-css-prop",
+    "next/babel",
     [
       "@babel/preset-react",
       { "runtime": "automatic", "importSource": "@emotion/react" }

@@ -1,6 +1,5 @@
 import React from "react";
-import "../../../src/index.css";
-/** @jsxImportSource @emotion/react */
+// /** @jsxImportSource @emotion/react */
 import { css, CSSObject } from "@emotion/react";
 
 export interface HeaderProps {
@@ -49,11 +48,3 @@ export const Header = ({ logo, direction }: HeaderProps) => {
     </header>
   );
 };
-// style={{
-//   display: "flex",
-//   justifyContent: "space-between",
-//   alignItems: "center",
-//   padding: "1rem",
-//   borderBottom: "1px solid #000",
-//   flexDirection: mode,
-// }}

@@ -1,5 +1,3 @@
-import React from "react";
-/** @jsxImportSource @emotion/react */
 import { CSSObject } from "@emotion/react";
 import { Button, ButtonProps } from "../Button/Button";
 
