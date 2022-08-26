@@ -1,10 +1,9 @@
-import React from "react";
-// import "./button.css";
+import React, { ButtonHTMLAttributes } from "react";
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<unknown> {
   primary?: boolean;
   backgroundColor?: string;
-  size?: string;
+  size?: "large" | "small";
   text: string;
   onClick?: () => void;
 }
@@ -24,16 +23,15 @@ export const Button = ({
     borderRadius: "8px",
     cursor: "pointer",
   };
-  const secondaryBtn = {
-    backgroundColor: "#3EF0D2",
-    padding: "6px 14px",
-    color: "#000",
-    border: "none",
-    borderRadius: "8px",
-    cursor: "pointer",
-  };
+  // const secondaryBtn = {
+  //   backgroundColor: "#3EF0D2",
+  //   padding: "6px 14px",
+  //   color: "#000",
+  //   border: "none",
+  //   borderRadius: "8px",
+  //   cursor: "pointer",
+  // };
 
-  const mode = primary ? primaryBtn : secondaryBtn;
   const sizeMode = size !== "large" ? "text-sm" : "text-lg";
 
   const btnClick = () => {
@@ -44,8 +42,8 @@ export const Button = ({
     <button
       type="button"
       onClick={btnClick}
-      style={mode}
       className={`btn-${sizeMode}`}
+      css={primaryBtn}
       {...props}
     >
       {text}
